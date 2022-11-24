@@ -1,0 +1,122 @@
+{
+    "pages": {
+        "page1": {
+            "title": "Home",
+            "content": {
+                "name": {
+                    "firstname": "Maria",
+                    "lastName1": "Blanco",
+                    "lastName2": "Canal"
+                },
+                "position": "Web developer",
+                "navbar": {
+                    "page2": "About me",
+                    "page3": "Skills and Workexperience",
+                    "page4": "Projects",
+                    "page5": "Contact"
+                },
+                "logo": "maybe"
+            }
+        },
+        "page2": {
+            "title": "About me",
+            "content": {
+                    "title": "WELCOME TO MY PORTFOLIO!",
+                    "text": [
+                        "After working for years helping clients choose the right product for them, I decided to shift my approach and work behind the curtains to build the tools that will help them choose for themselves!",
+                        "As a junior developer, I am driven and will not stop until I make the code work. I am eager to work in teams, to grow together and to learn from each other.",
+                        "My endurance and motivation never falter. I never shy from a daunting task, for I see it as an opportunity to learn and a step on the way to success."
+                        
+                    ],
+                    "goodPoints": [
+                        "Thirst for knowledge: love learning new things! ", "Team oriented: I support you, you support me!", "Goal seeker: chase after them without losing breath."
+                    ]
+            }
+        },
+        "page3": {
+            "title": "Skills and Workexperience",
+            "content": {
+                "title": "Skills and tools",
+                "skills": [
+                    {   
+                        "name": "Languages", 
+                        "which": ["HTML", "CSS/SCSS", "Javascript", "Python"] 
+                    },
+                    {   
+                        "name": "Tools",
+                        "which": ["Git/GitHub", "Contentful", "Trello", "Figma", "Lucidchart"]
+                    },
+                    {   
+                        "name": "Frameworks",
+                        "which": ["React"]
+                    },
+                    {   
+                        "name": "Back-end",
+                        "which": ["Node.js", "Express","PostgreSQL", "SQLite", "MongoDB"]
+                    }
+                ]
+            }         
+        },
+        "page4": {
+            "title": "Projects",
+            "content": {
+                "title": [
+                    "Some of my latest Projects",
+                    "made with love and dedication!"
+                ],
+                "focusPoints": ["Responsive", "Accesible", "Intuitive", "Dry, clean code"]
+                },
+                "projects": [ 
+                    {
+                        "title": "Gamify Your Day",
+                        "foto": "gamifyyourday",
+                        "features": {
+                            "Used": "CSS, React, Express(Node.js), MongoDB",
+                            "Team": "2 people project"
+                        },
+                        "url": "https://gamifyyourday.netlify.app/",
+                        "github": "https://github.com/stars/mariblan/lists/gamify-your-day"
+                    },
+                    {
+                        "title": "Coockbook",
+                        "foto": "cookbook",
+                        "features": {
+                            "Used": "CSS, React, Express(Node.js)",
+                            "Team": "2 people project"
+                        },
+                        "url": "#",
+                        "github": "https://github.com/stars/mariblan/lists/gamify-your-day"
+                    },
+                    {
+                        "title": "Hackerrank",
+                        "foto": "hackerrank",
+                        "features": {
+                            "Used": "SASS, React, Express(Node.js)",
+                            "Team": "1 people project"
+                        },
+                        "url": "#",
+                        "github": "https://github.com/stars/mariblan/lists/gamify-your-day"
+                    }
+                ]
+        },
+        "page5": {
+            "title": "Contact",
+            "links": [
+                {
+                    "name": "GitHub",
+                    "logo": "#",
+                    "url": "#"
+                },
+                {
+                    "name": "Linkedin",
+                    "logo": "#",
+                    "url": "#"
+                }
+            ],
+            "formular": {
+                "name": "name",
+                "email": "email"
+            }
+        }
+    }
+    }

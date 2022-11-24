@@ -1,0 +1,379 @@
+.home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #090a2bd7; */
+  }
+
+  /* Maria */
+  .name {
+    font-weight: 500;
+    line-height: 3rem;
+    color: #968123;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 3% 0%;
+    text-align: center;
+    border: 2px solid #968123;
+    padding: 5% 15% 5% 10%;
+  }
+  .maria {
+   font-size: 2rem;
+   padding: 2%;
+  }
+  .blanco {
+   font-size: 2em;
+   margin-left: 40%;
+   margin-right: 40%;
+   padding: 2%;
+  }
+  .canal {
+   font-size: 2em;
+   padding: 2%;
+  }
+
+  /* Buttons */
+  
+  .navbar > button {
+    background-color: #968123cd;
+    border: #7d7035e9 1px solid;
+    border-radius: 15px;
+    transition: all 500ms;
+    font-size: 1.3rem;
+    margin: 2%;
+  }
+  .navbar > button:visited {
+    color: #968123;
+  }
+  .navbar > button:hover {
+    transform: scale(1.2);
+  } 
+  .navbar > button > a {
+    color: #222366;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+  }
+  .navbar > button > a:active {
+    color: #16174c;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  @media (min-width: 1025px){
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-image: url(./resources/gridhaikei1024.svg);
+        background-size: cover;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        padding-top: 5%;
+      }
+      .main > h2 {
+        color: #968123;
+        text-align: center;
+        line-height: 100%;
+        max-width: 100%;
+        margin: 10%;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 3px solid #968123;
+        padding-top: 15%;
+      }
+      .navbar > button {
+        width: 115%;
+        height: auto;
+        border: #7d7035e9 1px solid;
+        padding: 20%;
+        margin: 2%;
+      }
+      #about {
+        padding: 16%;
+      }
+}
+@media only screen and (min-width: 912px) and (max-width: 959px) {
+  .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: url(./resources/gridhaikei1024.svg);
+      background-size: cover;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15%;
+    }
+    .main > h2 {
+      color: #968123;
+      text-align: center;
+      line-height: 100%;
+      max-width: 100%;
+      margin: 10%;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: space-between;
+      justify-content: center;
+      border-top: 3px solid #968123;
+      padding-top: 60%;
+    }
+    .navbar > button {
+      width: 115%;
+      height: auto;
+      padding: 15%;
+      margin: 2%;
+    }
+} 
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-image: url(./resources/gridhaikei1024.svg);
+        background-size: cover;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .main > h2 {
+        color: #968123;
+        text-align: center;
+        line-height: 100%;
+        max-width: 30%;
+        margin: 10%;
+      }
+      .navbar {
+        display: flex;
+        display: row;
+        justify-content: center;
+        align-items: space-around;
+        border-top: 3px solid #968123;
+        padding-top: 5%;
+      }
+      .navbar > button {
+        width: 115%;
+        height: auto;
+        border: #7d7035e9 1px solid;
+        padding: 20%;
+        margin: 2%;
+      }
+}
+@media only screen and (min-width: 768px) and (max-width: 911px) {
+  .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: url(./resources/gridhaikei800.svg);
+      background-size: cover;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15%;
+    }
+    .main > h2 {
+      color: #968123;
+      text-align: center;
+      line-height: 100%;
+      max-width: 100%;
+      margin: 10%;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: space-between;
+      justify-content: center;
+      border-top: 3px solid #968123;
+      padding-top: 30%;
+    }
+    .navbar > button {
+      width: 110%;
+      height: auto;
+      padding: 15%;
+      margin: 2%;
+    }
+} 
+@media screen and (min-width: 394px) and (max-width: 767px) {
+  .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: url(./resources/gridhaikei800.svg);
+      background-size: cover;
+    }
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main > h2 {
+      color: #968123;
+      text-align: center;
+      line-height: 100%;
+      max-width: 30%;
+      margin: 7%;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 3px solid #968123;
+      padding: 11%;
+    }
+    .navbar > button {
+      width: 115%;
+      height: auto;
+      padding: 20%;
+      margin: 2%;
+    }
+}
+@media screen and (max-width: 393px) {
+  .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: url(./resources/gridhaikei800.svg);
+      background-size: cover;
+    }
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main > h2 {
+      color: #968123;
+      text-align: center;
+      line-height: 100%;
+      max-width: 30%;
+      margin: 7%;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 3px solid #968123;
+      padding: 9%;
+    }
+    .navbar > button {
+      width: 115%;
+      height: auto;
+      padding: 20%;
+      margin: 2%;
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 392px) {
+  .home {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: url(./resources/gridhaikei800.svg);
+      background-size: cover;
+    }
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3%;
+    }
+    .main > h2 {
+      color: #968123;
+      text-align: center;
+      line-height: 100%;
+      max-width: 40%;
+      margin: 6% ;
+      font-size: 1.6rem;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 3px solid #968123;
+      padding: 10%;
+    }
+    .navbar > button {
+      width: 115%;
+      height: auto;
+      padding: 20%;
+      margin: 2%;
+    }
+}
+@media screen and (min-width: 50px) and (max-width: 380px) {
+  .home {
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: url(./resources/gridhaikei800.svg);
+      background-size: cover;
+    }
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3%;
+    }
+    .main > h2 {
+      color: #968123;
+      text-align: center;
+      line-height: 100%;
+      max-width: 40%;
+      margin: 6% ;
+      font-size: 1.6rem;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 3px solid #968123;
+      padding: 10%;
+    }
+    .navbar > button {
+      width: 115%;
+      height: auto;
+      padding: 20%;
+      margin: 2%;
+    }
+}
+
+/* background-repeat:no-repeat;
+    background-position:fixed; */

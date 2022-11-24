@@ -1,0 +1,244 @@
+.cvbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #090a2bd7;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.cv {
+    position: relative;
+    top: 13%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titlecv {
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+.skillbox {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.skillboxrepeat {
+    color: #16174c;
+    max-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4%;
+    padding: 7%;
+    flex: 1 1 90%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+    border: 3px #f4f0de;
+    background-color: hsla(50, 58%, 85%, 0.702);
+    border-radius: 10px;
+    flex: 1 1 90%;
+    box-shadow: 2px 3px #968123;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+.flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    color: #cbc18d;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 5rem;
+}
+.flip-card-back {
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.skillname {
+ color:#16174c;
+}
+.listskills {
+    color: #16174c;
+}
+  
+.skilldoes {
+    color: #16174c;
+}
+.cvdownload {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #968123;
+    border-radius: 15px;
+    margin-top: 2%;
+    width: 50%;
+}
+.downloadbtn,
+.downloadelement {
+    margin: 1%;
+    font-weight: 400;
+}
+
+.downloadbtn {
+    background-color: #e7e7e7c9;
+    color: #16174c;
+    box-shadow: 4px 5px 2px #737061;
+    padding: 2%;
+}
+.downloadbtn:active {
+    box-shadow: 2px 2px 2px #737061;
+    padding: 2%;
+    transform: translateY(4px);
+}
+/*Screen adaptation*/
+@media (min-width: 1025px){
+    .skillbox {
+        margin: 1rem;
+    }
+    
+    .skillboxrepeat {
+        max-width: 10rem;
+        padding: 7%;
+        width: 13rem;
+        height: 13rem;
+        margin: 1.4rem;
+        flex: 1 1 40%;
+    }
+    .cvdownload {
+        width: 80%;
+        margin: 4%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 1.5%;
+        font-weight: 400;
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .skillbox {
+        margin: 1rem;
+    }
+    
+    .skillboxrepeat {
+        max-width: 10rem;
+        padding: 7%;
+        width: 12rem;
+        height: 12rem;
+        margin: 1.1rem;
+        flex: 1 1 40%;
+    }
+    .cvdownload {
+        width: 80%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 1.5%;
+        font-weight: 400;
+    }
+}
+@media only screen and (min-width: 912px) and (max-width: 959px) {
+    .downloadbtn,
+    .downloadelement {
+        margin: 1%;
+        font-weight: 400;
+    }
+} 
+@media only screen and (min-width: 768px) and (max-width: 911px) {
+    .skillbox {
+        margin: 3rem;
+    }
+    
+    .skillboxrepeat {
+        max-width: 10rem;
+        padding: 7%;
+        width: 13rem;
+        height: 13rem;
+        margin: 1.3rem;
+        flex: 1 1 40%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 1%;
+        font-weight: 400;
+    }
+
+}
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    .cvdownload {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        width: 80%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 3%;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 394px) and (max-width: 539px) {
+    .cvdownload {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        width: 80%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 3%;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 393px) {
+    .cvdownload {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        width: 80%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 3%;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 370px) and (max-width: 389px) {
+    .cvdownload {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        width: 80%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 3%;
+        font-weight: 400;
+    }
+    
+}
+@media screen and (min-width: 360px) and (max-width: 369px) {
+    .cvdownload {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        width: 80%;
+    }
+    .downloadbtn,
+    .downloadelement {
+        margin: 3%;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 279px) and (max-width: 359px) {
+  
+}
+
