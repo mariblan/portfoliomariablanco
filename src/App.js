@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import CV from "./components/CV";
-//import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 
 function App() {
@@ -18,13 +18,8 @@ function App() {
           <Route path="/aboutme" element={<AboutMe />}></Route>
           <Route path="/cv" element={<CV />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
-
-        {/* <Route path="aboutme" component={<AboutMe />} /> */}
-
-        {/* 
-        <Route path="/" element={<Contact />}></Route>
-        <Route path="/" element={<Projects />}></Route> */}
       </div>
     </Router>
   );
