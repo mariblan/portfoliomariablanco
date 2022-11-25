@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import "../contact.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -8,6 +8,9 @@ import Footer from "./Footer";
 export default function Contact() {
   const [input, setInput] = useState({ name: "", email: "", message: "" });
   const form = useRef();
+  const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
+  const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID;
+  const publickey = process.env.REACT_APP_YOUR_PUBLIC_KEY;
   const handleChange = (e) => {
     setInput({
       ...input,
@@ -21,21 +24,15 @@ export default function Contact() {
     if (input.name === "" || input.email === "" || input.message === "") {
       alert("Please fill all the fields");
     } else {
-      emailjs
-        .sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
-          form.current,
-          "YOUR_PUBLIC_KEY"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      console.log(serviceId, templateId, publickey);
+      emailjs.sendForm(serviceId, templateId, form.current, publickey).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
       setInput({
         ...input,
         name: "",
@@ -92,7 +89,7 @@ export default function Contact() {
                     ></textarea>
                   </div>
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" value="Send" className="btn btn-primary">
                   Submit
                 </button>
               </form>
